@@ -1,0 +1,51 @@
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body, .body{
+  background: #e4e5ea;
+  background-color: #e4e5ea;
+}
+
+.header{
+  background: #FF690f;
+  background-color: #FF690f;
+
+  .columns{
+    padding: 20px !important;
+
+    .kayak_logo{
+      width: 128px;
+    }
+
+    .user_logo{
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.sub-header{
+  background: #D65600;
+  background-color: #D65600;
+
+  .columns{
+    padding: 5px 10px !important;
+
+    .sub_logo{
+      float: left;
+      width: 20px;
+      height: 20px;
+      padding-right: 10px !important;
+    }
+    
+
+    a{
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      
+    } 
+  }
+}
