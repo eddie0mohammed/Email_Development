@@ -49,3 +49,202 @@ html, body, .body{
     } 
   }
 }
+
+.deal-of-day{
+  background: #1f191f;
+  background-color: #1f191f;
+  height: 580px;
+  
+  
+  *{
+    color: white;
+  }
+  h2{
+    text-align: center;
+    padding: 20px 0 !important;
+    font-weight: 700;
+  }
+
+  .col{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .description{
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 700;
+  }
+
+  .save_amount{
+    padding-top: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    text-align: center;
+    font-size: 12px !important;
+    font-weight: 700;
+
+  }
+  
+  .tiny_info{
+    padding-top: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    text-align: center;
+    font-size: 10px !important;
+    font-weight: 500;
+  }
+
+  .price{
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    text-align: center;
+    // font-size: 10px !important;
+    font-weight: 900;
+  }
+
+  .button{
+
+    padding-top: 10px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    padding-bottom: 10px !important;
+
+    text-align: center;
+    font-weight: 700;
+
+    border: 2px solid #fff;
+    border-radius: 5px;
+  }
+}
+
+.second_row{
+  background:#F1F4F7;
+  background-color:#F1F4F7;
+  // height: 580px;
+
+  .container_col{
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    
+    
+    
+    .inner_col{
+      padding-top: 20px !important;
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+      padding-bottom: 20px !important;
+      background: white;
+
+      .bed_dark{
+        margin: 0 auto !important;
+        width: 50%;
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        // padding-bottom: 20px !important;
+      }
+
+      .description{
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    
+        text-align: center;
+        font-size: 14px !important;
+        font-weight: 600;
+      }
+
+      .text_description{
+        padding-top: 10px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        padding-bottom: 10px !important;
+        text-align:center;
+        font-size: 12px;
+        font-weight: 300;
+      }
+
+      .save_amount{
+        padding-top: 10px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    
+        text-align: center;
+        font-size: 14px !important;
+        color: rgb(0, 155, 245);
+        font-weight: 700;
+    
+      }
+      .tiny_info{
+        padding-top: 0px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    
+        text-align: center;
+        font-size: 10px !important;
+        font-weight: 100;
+      }
+      .price{
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    
+        text-align: center;
+        // font-size: 10px !important;
+        font-weight: 900;
+      }
+      .button{
+        width: 80px;
+        margin: 0 auto !important;
+
+        padding-top: 10px !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+        padding-bottom: 10px !important;
+    
+        text-align: center;
+        font-weight: 700;
+    
+        border: 2px solid black;
+        border-radius: 3px;
+        color: white;
+        background: black;
+        background-color: black;
+        
+      }
+
+      .button1{
+        width: 100px;
+        margin: 0 auto !important;
+
+        padding-top: 10px !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        padding-bottom: 10px !important;
+    
+        text-align: center;
+        font-weight: 700;
+    
+        border: 2px solid black;
+        border-radius: 3px;
+        color: white;
+        background: black;
+        background-color: black;
+        
+      }
+    }
+
+
+  }
+}
