@@ -8,16 +8,16 @@ subject: Great Deals Today
     <row class="deal-of-day">
         <columns class="col" >
             <h2>Deal of the Day</h2>
-            <img src="{{root}}/assets/img/kayak_files/ireland.png" alt="ireland_image">
-            <p class="description">Ireland: 8 days with air, hotel and car rental. Use promo code CFDL110 to save. Price reflects NYC departure, other cities available.</p>
-            <p class="save_amount">Save $110 with code</p>
-            <p class="tiny_info">Gate 1 Travel</p>
+            <img src="{{kayakEmail.dealOfTheDay.imageLink}}" alt="ireland_image">
+            <p class="description">{{kayakEmail.dealOfTheDay.location}}: {{kayakEmail.dealOfTheDay.description}}</p>
+            <p class="save_amount">{{kayakEmail.dealOfTheDay.saveAmount}}</p>
+            <p class="tiny_info">{{kayakEmail.dealOfTheDay.tinyInfo}}</p>
 
-            <h5 class="price">$649+</h5>
+            <h5 class="price">${{kayakEmail.dealOfTheDay.price}}+</h5>
 
             <p style="text-align: center; color:transparent">x</p>
             <center>
-                <a href="#"><span style="margin-bottom: 50px;" class="button">See Deal</span></a>
+                <a href="{{kayakEmail.dealOfTheDay.linkToDeal}}"><span style="margin-bottom: 50px;" class="button">See Deal</span></a>
             </center>
         </columns>
 
@@ -28,15 +28,17 @@ subject: Great Deals Today
 <container>
     <row class="second_row">
         <columns class="container_col">
+            {{#each kayakEmail.offers}}
+            
             <row>
                 
                 <columns class="inner_col">
-                    <img class="cancun" src="{{root}}/assets/img/kayak_files/cancun.png" alt="cancun">
-                    <p class="description">Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</p>
-                    <p class="save_amount">Save up to 65%</p>
-                    <p class="tiny_info">CheapCaribbean.com</p>
+                    <img class="cancun" src="{{this.imageLink}}" alt="cancun">
+                    <p class="description">{{this.location}}: {{this.description}}</p>
+                    <p class="save_amount">{{this.saveAmount}}</p>
+                    <p class="tiny_info">{{this.tinyInfo}}</p>
 
-                    <h5 class="price">$689+</h5>
+                    <h5 class="price">${{this.price}}+</h5>
 
                     <p style="text-align: center; color:transparent">x</p>
                     
@@ -46,6 +48,7 @@ subject: Great Deals Today
                 </columns>
 
             </row>
+            {{/each}}
 
 
             
@@ -58,7 +61,7 @@ subject: Great Deals Today
             <row>
                 
                 <columns class="inner_col">
-                    <img class="bed_dark" src="{{root}}/assets/img/kayak_files/bed_dark.png" alt="bed_dark">
+                    <img class="bed_dark" src="https://i.imgur.com/H7tBPqJ.png" alt="bed_dark">
                     <p class="description">Still looking? There's more</p>
                     <p class="text_description">Search hundreds of deals to suit your budget on flights, packages, cruises and more.</p>
 
@@ -78,3 +81,4 @@ subject: Great Deals Today
         </columns>
     </row>
     </container>
+
