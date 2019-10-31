@@ -1,0 +1,96 @@
+
+1. Which html tags are supported?
+
+https://www.pinpointe.com/blog/email-campaign-html-and-css-support
+
+
+2. Which email clients supports what property?
+
+https://campaignmonitor.com/css
+
+
+3. Installing foundation
+
+npm install --global foundation-cli
+
+foundation new --framework emails
+
+- update package.json => gulp : 4.0
+- npm install
+
+
+4. Start
+
+- clear index.html
+- clear template.scss
+
+
+5. 12 Columns (small="12" large="12")
+	
+	- offset => class="large-offset-8"
+
+
+6. layouts
+
+create layouts/email.html (our layout for our email)
+
+index.html => 
+
+---
+layout: email.html
+subject: The title of our email
+---
+
+
+7. partials
+
+header.html
+footer.html
+
+in email.html:
+ 
+ {{> header}}
+ {{> body}}
+ {{> footer}}
+
+
+ 8. IF Statements
+
+ {{#ifpage 'index'}}
+
+ ...
+
+ {{/ifpage}}
+
+ checkout handlebars.js / panini
+
+
+ 9. Custom data
+
+ data/mydata.json
+
+ update gulpfile
+
+ .pipe(panini({
+ ...
+ ...
+ data: "src/data"
+ }))
+
+ npm start
+
+ use => index.html
+
+ {{mydata.title}}
+
+
+
+10. Looping over json data
+
+{{#each}}
+
+<h1>{{this.title}}</h1>
+
+{{/each}}
+
+
